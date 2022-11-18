@@ -1,39 +1,97 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio-Anderson Velásquez</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <div class="container-fluid bg-dark">
-            <nav class="navbar navbar-expand-lg bg-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand text-white" href="#">PORTAFOLIO</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" ></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active text-white" aria-current="page" href="#">INICIO</a>
-                      <a class="nav-link text-white" href="#">ACERCA DE</a>
-                      <a class="nav-link text-white" href="#">MÁS</a>
-                      <a class="nav-link text-white">CONTACTO</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-                <img class="container-fluid mb-5" src="./imagenes/progrmacion.png" alt="image-progra">
-              
-             
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header class="encabezadoport">
+      <div class="container">
+        <h1 class="encabezadoport-name">
+          <a class="encabezadoport-name-a" href="#">Anderson Velásquez</a>
+        </h1>
+        <nav class="encabezadoport-nav">
+          <a class="encabezadoport-nav-a" href="#">Home</a>
+          <a class="encabezadoport-nav-a" href="#">Habilidades</a>
+          <a class="encabezadoport-nav-a" href="#">Trabajos</a>
+          <a class="encabezadoport-nav-a" href="#">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="home-bienvenida" data-aos="fade-up">
+            <h1 class="home-titulo" >Hola,soy Anderson Desarrollador Web</h1>
+            <p class="home-parrafo">Estudiante de Ingenieria en Sistemas informáticos, apasionado por el desarrollo web.</p>
+          </div>
+        
+            <img src="./imagenes/progrmacion.png" alt="Programacion" class="home-image" data-aos="fade-up">
+         
+         
+        </div>
+      </section>
+      <section>
+        <div class="habilidades">
+          <h2 class="habilidades-titulo">Mis Habilidades</h2>
+          <p class="habilidades-parrafo">Adquiridas en formacion continua.</p>
+          <ul class="habilidades-items">
+            <li class="habilidades-ul" data-aos="zoom-in-up"><a href="#">HTML5</a>
+                Nivel Avanzado en conocimiento de HTML5
+            </li>
+            <li class="habilidades-ul" data-aos="zoom-in-up"><a href="#">CSS3</a>
+              Necesario para estilar las paginas web
+            </li>
+            <li class="habilidades-ul" data-aos="zoom-in-up"><a href="#">JAVASCRIPT</a>
+              Da funcionalidades a las paginas web.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="trabajos">
+        <div class="container">
+          <h2 class="trabajos-titulo">Mi Experiencia</h2>
+          <p class="trabajos-parrafo">Aca los trabajos que he realizado.</p>
+          <input type="submit" value="GitHub" class="trabajos-boton">
+          <div >
+            <ul class="items">
+              <li class="trabajos-trabajos">Trabajo1</li>
+              <li class="trabajos-trabajos">Trabajo2</li>
+              <li class="trabajos-trabajos">Trabajo3</li>
+              <li class="trabajos-trabajos">Trabajo4</li>
+              <li class="trabajos-trabajos">Trabajo5</li>
+              <li class="trabajos-trabajos">Trabajo6</li>
+            </ul>
+          </div>
         </div>
        
-    </header>
-
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+      </section>
+      <section class="contacto">
+       &hearts; Anderson-Velásquez &copy;
+       <div class="social">
+        <i class="fi fi-brands-facebook"></i>
+        <i class="fi fi-brands-whatsapp"></i>
+        <i class="fi fi-brands-twitter"></i>
+       </div>
+       
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:2000
+      });
+    </script>
+  </body>
 </html>
