@@ -13,6 +13,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
@@ -21,11 +22,14 @@
         <h1 class="encabezadoport-name">
           <a class="encabezadoport-name-a" href="#">Anderson Velásquez</a>
         </h1>
+        <div class="toogle"><i class="fi fi-rr-menu-burger" id="toggle"></i></div>
         <nav class="encabezadoport-nav">
+      
           <a class="encabezadoport-nav-a" href="#">Home</a>
           <a class="encabezadoport-nav-a" href="#">Habilidades</a>
           <a class="encabezadoport-nav-a" href="#">Trabajos</a>
           <a class="encabezadoport-nav-a" href="#">Contacto</a>
+         
         </nav>
       </div>
     </header>
@@ -33,7 +37,7 @@
       <section class="home">
         <div class="container">
           <div class="home-bienvenida" data-aos="fade-up">
-            <h1 class="home-titulo" >Hola,soy Anderson Desarrollador Web</h1>
+            <h1 class="home-titulo" >Hola,soy Anderson <span class="typed"></span> </h1>
             <p class="home-parrafo">Estudiante de Ingenieria en Sistemas informáticos, apasionado por el desarrollo web.</p>
           </div>
         
@@ -63,7 +67,7 @@
         <div class="container">
           <h2 class="trabajos-titulo">Mi Experiencia</h2>
           <p class="trabajos-parrafo">Aca los trabajos que he realizado.</p>
-          <input type="submit" value="GitHub" class="trabajos-boton">
+          <a href="https://github.com/" class="trabajos-boton">GitHub</a>
           <div >
             <ul class="items">
               <li class="trabajos-trabajos">Trabajo1</li>
@@ -80,18 +84,21 @@
       <section class="contacto">
        &hearts; Anderson-Velásquez &copy;
        <div class="social">
-        <i class="fi fi-brands-facebook"></i>
-        <i class="fi fi-brands-whatsapp"></i>
-        <i class="fi fi-brands-twitter"></i>
+        <a href="https://www.facebook.com/anderson.velasquez.982292/"><i class="fi fi-brands-facebook"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="fi fi-brands-whatsapp"></i></a>
+        <a href="https://twitter.com/anderVJ03"><i class="fi fi-brands-twitter"></i></a>
        </div>
        
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
         duration:2000
       });
     </script>
+    <script src="./toogle.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
